@@ -101,9 +101,7 @@ function help(msg){
 	    
 	}
 	if(helpStr)
-		msg.channel.send(helpStr, {
-			'code': 'css'
-		});
+		helpStr(msg);
 	else 
 		msg.channel.send({embed: {
     color: 3447003,
